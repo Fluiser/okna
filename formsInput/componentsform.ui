@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ComponentsForm</class>
+ <widget class="QWidget" name="ComponentsForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>787</width>
+    <height>725</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="text">
+        <string>Показать удалённые</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Показать только тип распеч.</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>Все</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QTableWidget" name="components_table">
+       <column>
+        <property name="text">
+         <string>Тип</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Название</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Артикул</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Удалён</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="components_left">
+         <property name="text">
+          <string>&lt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="components_plus">
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="components_minus">
+         <property name="text">
+          <string>-</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="components_right">
+         <property name="text">
+          <string>&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="components_label">
+         <property name="text">
+          <string>0 из 0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Осн. данные</string>
+        </attribute>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>81</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ширина, мм</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>75</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Толщина, мм</string>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="width_component">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>10</y>
+           <width>101</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="maximum">
+          <double>999999.989999999990687</double>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="height_component">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>50</y>
+           <width>101</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="maximum">
+          <double>999999.989999999990687</double>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>75</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Ед. изм-я</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="unittype_selector">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>90</y>
+           <width>101</width>
+           <height>24</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>10</y>
+           <width>271</width>
+           <height>101</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Размер В</string>
+         </property>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>121</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>рамы, створки</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>131</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>импостеры, штульпы</string>
+          </property>
+         </widget>
+         <widget class="QDoubleSpinBox" name="frames_component">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>30</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <double>999999.989999999990687</double>
+          </property>
+         </widget>
+         <widget class="QDoubleSpinBox" name="impost_component">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>60</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <double>999999.989999999990687</double>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>120</y>
+           <width>121</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Разм. до фурн. паза</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>150</y>
+           <width>121</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Удлинение арки</string>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="fitting_groove_component">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>120</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="maximum">
+          <double>999999.989999999990687</double>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="arch_exntesion_component">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>150</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="maximum">
+          <double>999999.989999999990687</double>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Типа для распечатки</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="printout_table">
+           <column>
+            <property name="text">
+             <string>Тип распечатки</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>0 из 20</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="text">
+              <string>+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="text">
+              <string>-</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="printout_combobox"/>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>checkwindow</class>
+ <widget class="QWidget" name="checkwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>749</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Общие данные</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="minimumSize">
+          <size>
+           <width>421</width>
+           <height>331</height>
+          </size>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QWidget" name="gridLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>561</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Дата</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Валюта</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Договор №</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QDoubleSpinBox" name="nds">
+             <property name="value">
+              <double>20.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Клиент</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="declaration_N"/>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Счет №</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>НДС.%</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QDateEdit" name="date"/>
+           </item>
+           <item row="3" column="1">
+            <widget class="QDoubleSpinBox" name="sum">
+             <property name="inputMethodHints">
+              <set>Qt::ImhNone</set>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="maximum">
+              <double>99999999999999.984375000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QComboBox" name="client">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Сумма</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QComboBox" name="valute"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="checkN"/>
+           </item>
+           <item row="0" column="4">
+            <widget class="QToolButton" name="toolButton">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>210</y>
+            <width>181</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Скидка</string>
+          </property>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>71</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Скидка</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>70</y>
+             <width>71</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>В %</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="discountValue">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>30</y>
+             <width>111</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="prefix">
+            <string notr="true"/>
+           </property>
+           <property name="suffix">
+            <string notr="true"/>
+           </property>
+           <property name="maximum">
+            <double>10000555072.000000000000000</double>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="discountProcent">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>70</y>
+             <width>111</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="decimals">
+            <number>2</number>
+           </property>
+           <property name="maximum">
+            <double>100.000000000000000</double>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QPushButton" name="deleteCheckButton">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>290</y>
+            <width>201</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>❌ удалить счет</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="gridLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>210</y>
+            <width>113</width>
+            <height>80</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkbox_paid">
+             <property name="text">
+              <string>Оплачен</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBox_inprocess">
+             <property name="text">
+              <string>В производство</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_declined">
+             <property name="text">
+              <string>Отменён</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_28">
+         <property name="text">
+          <string>Примечание</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="description"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Изделия</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="tableWidget">
+           <column>
+            <property name="text">
+             <string>Изделие</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Стоимость</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Ширина</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Высота</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Дата</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>Работы</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QTableWidget" name="work_table">
+           <column>
+            <property name="text">
+             <string>Наименование</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Стоимость, %</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Цена</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Кол-во</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Ед. изм</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Скидка, %</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Стоимость</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="work_plusbutton">
+             <property name="text">
+              <string>+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="work_minusbutton">
+             <property name="text">
+              <string>-</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="work_sumlabel">
+             <property name="text">
+              <string>0,00</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
